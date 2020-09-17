@@ -13,6 +13,6 @@ anyhow = "1.0.26"
 bincode = "1.1.2"
 serde = "1.0.104"
 paired = "0.20.0"
-storage-proofs = { git = "https://github.com/filecoin-project/rust-fil-proofs" }
-filecoin-proofs-v1 = { package = "filecoin-proofs", git = "https://github.com/filecoin-project/rust-fil-proofs" }
+storage-proofs = { git = "https://github.com/filecoin-project/rust-fil-proofs", branch = "single-vanilla-fix" }
+filecoin-proofs-v1 = { package = "filecoin-proofs", git = "https://github.com/filecoin-project/rust-fil-proofs", branch = "single-vanilla-fix" }
 #filecoin-proofs-v1 = { package = "filecoin-proofs", version = "5.1.1" }
