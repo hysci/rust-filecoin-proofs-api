@@ -1,13 +1,13 @@
 use std::path::PathBuf;
 
 use anyhow::{ensure, Result};
-use storage_proofs_core::api_version::ApiVersion;
-use storage_proofs_core::parameter_cache::{get_verifying_key_data, get_parameter_data};
 use filecoin_proofs_v1::types::{
     MerkleTreeTrait, PoRepConfig, PoRepProofPartitions, PoStConfig, PoStType, SectorSize,
 };
 use filecoin_proofs_v1::{constants, with_shape};
 use serde::{Deserialize, Serialize};
+use storage_proofs_core::api_version::ApiVersion;
+use storage_proofs_core::parameter_cache::{get_parameter_data, get_verifying_key_data};
 /// Available seal proofs.
 /// Enum is append-only: once published, a `RegisteredSealProof` value must never change.
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash, Serialize, Deserialize)]
